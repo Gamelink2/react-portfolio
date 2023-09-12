@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+    <Navbar sticky="top" expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">Portfolio Nick Klaassen</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,9 +16,9 @@ function BasicExample() {
             <Nav.Link href="#home">About me</Nav.Link>
             <Nav.Link href="#link">Projects</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.2">3D-printing</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Coding</NavDropdown.Item>
-              <NavDropdown.Divider /><NavDropdown.Item href="#action/3.4">Contact me</NavDropdown.Item>
+              <NavDropdown.Item href="#Services/3D-printing">3D-printing</NavDropdown.Item>
+              <NavDropdown.Item href="#Services/Coding">Coding</NavDropdown.Item>
+              <NavDropdown.Divider /><NavDropdown.Item href="#Contact">Contact me</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
@@ -26,7 +26,6 @@ function BasicExample() {
     </Navbar>
   );
 }
-
 export default BasicExample;
 
 /*function App(): JSX.Element {
