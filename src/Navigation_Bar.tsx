@@ -7,7 +7,7 @@ import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
 import Contact from './Pages/contactMe';
 import About from './Pages/aboutMe';
 import Home from './Pages/homePage';
-import Projects from './Pages/Projects';
+import Projects from './Pages/projects';
 
 function NavBar() {
   return (
