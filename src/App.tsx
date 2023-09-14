@@ -9,13 +9,12 @@ import About from './Pages/aboutMe';
 
 function App() {
     return (
-        <Router>
+        
             <NavBar />
-            <Routes>
-                <Route path='/About' element={<About />} />
-                <Route path='/Contact_me' element={<Contact />} />
-            </Routes>
-        </Router>
+          
+               
+           
+       
     );
 }
  
