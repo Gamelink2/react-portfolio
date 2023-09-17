@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './Navigation_Bar';
+import App from './Components/Navigation_Bar';
 
 const rootElement = document.getElementById('root') as HTMLElement;
 

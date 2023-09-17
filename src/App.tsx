@@ -1,21 +1,16 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Navigation_Bar';
-import { BrowserRouter as Router, Routes, Route }from 'react-router-dom';
-import Contact from './Pages/contactMe';
-import About from './Pages/aboutMe';
-
-
+import NavBar from './Components/Navigation_Bar';
+import Banner from './Components/banner';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
-        
             <NavBar />
-          
-               
-           
-       
+            //<Banner />
     );
 }
  
 export default App;
+
+//https://www.youtube.com/watch?v=hYv6BM2fWd8

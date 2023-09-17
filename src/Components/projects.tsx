@@ -5,8 +5,7 @@ import Row from 'react-bootstrap/Row';
 
 function Projects() {
   return (
-    
-    <Row xs={1} lg={2} xxl={3} className="g-4 py-5 mx-5">
+    <Row xs={1} lg={2} xxl={3} className="g-4 py-5 mx-5 ">
         <Col>
           <Card style={{ width: '25rem' }}>
             <Card.Img variant="top" src="holder.js/100px160" />
@@ -60,7 +59,7 @@ function Projects() {
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: '21rem' }}>
+          <Card style={{ width: '25rem' }}>
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>Card title5</Card.Title>
