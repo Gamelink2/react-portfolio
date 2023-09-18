@@ -13,15 +13,15 @@ import Projects from './projects';
 import {useState, useEffect} from "react";
 
 function NavBar() {
-  //const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, seeScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState('/');
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50){
-      seeScrolled(true);
+      setScrolled(true);
       } else {
-        seeScrolled(false);
+        setScrolled(false);
       }
     }
 
@@ -29,25 +29,29 @@ function NavBar() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
+  const onUpdateActiveLink = (value:any) => {
+    setActiveLink(value);
+  }
+
   return (
     <BrowserRouter>
-    <Navbar className={scrolled ? "scrolled": ""} sticky="top" expand="sm" text-color="white" >
+    <Navbar className={scrolled ? "scrolled": ""} sticky="top" expand="md">
       <Container>
-        <Navbar.Brand as={Link} to="/"><img src={Logo} height={30} alt="Portfolio Nick Klaassen" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand as={Link} to="/"><img src={Logo} height={30} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
+        <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav"> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/About">About me</Nav.Link>
-            <Nav.Link as={Link} to="/Projects">Projects</Nav.Link>
+          <Nav className="ms-auto">
+          <Nav.Link className={activeLink === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/')} as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className={activeLink === '/About' ? 'active navbar-link' : 'navbar-link'} as={Link} onClick={() => onUpdateActiveLink('/About')} to="/About">About me</Nav.Link>
+            <Nav.Link className={activeLink === '/Projects' ? 'active navbar-link' : 'navbar-link'}as={Link} onClick={() => onUpdateActiveLink('/Projects')} to="/Projects">Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="/"><img src={navIcon1} height={20} alt= "" /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} height={20} alt= "" /></a>
               <a href="/"><img src={navIcon3} height={20} alt= "" /></a>
             </div>
+            <button className="button" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>
-          <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
