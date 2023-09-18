@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import '../App.css';
 
 function Projects() {
   return (
-    <Row xs={1} lg={2} xxl={3} className="g-4 py-5 mx-5 ">
-        <Col>
-          <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src="holder.js/100px160" />
+    <Container className="project-cards">
+   
+          <Card border="primary" style={{ width: '22rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/seed/42/286/180" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -18,10 +18,9 @@ function Projects() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src="holder.js/100px160" />
+      
+          <Card border="danger" style={{ width: '22rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/seed/69/286/180" />
             <Card.Body>
               <Card.Title>Card title2</Card.Title>
               <Card.Text>
@@ -31,10 +30,9 @@ function Projects() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src="holder.js/100px160" />
+       
+          <Card border="success" style={{ width: '22rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/seed/11/286/180" />
             <Card.Body>
               <Card.Title>Card title3</Card.Title>
               <Card.Text>
@@ -44,10 +42,9 @@ function Projects() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src="holder.js/100px160" />
+        
+          <Card style={{ width: '22rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/seed/420/286/180" />
             <Card.Body>
               <Card.Title>Card title4</Card.Title>
               <Card.Text>
@@ -57,10 +54,9 @@ function Projects() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src="holder.js/100px160" />
+        
+          <Card style={{ width: '22rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/seed/666/286/180" />
             <Card.Body>
               <Card.Title>Card title5</Card.Title>
               <Card.Text>
@@ -70,9 +66,8 @@ function Projects() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </Col>
         
-    </Row>
+    </Container>
   );
 }
 

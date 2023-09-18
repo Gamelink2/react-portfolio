@@ -1,20 +1,24 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function About() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>about</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <section className='banner' id="home">
+      <Container>
+        <Row className="align-items-center my-5">
+            <Col xs={12} md={6} xl={7}>
+                <span className='tagline'>Welcome to my about page</span>
+                <h1>{'Here i will tell a few things about myself'}<span className='wrap'></span></h1>
+                <p>a few things</p>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+            <p>can put an image here</p>
+            </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 

@@ -22,11 +22,12 @@
         ]
       }
     },
-    "include": ["src"],
+    "include": ["src", "src/components", "src/custom.d.ts"],
     "types": [
       "@types/node",
       "@types/react",
       "@types/react-dom",
       "@types/react-bootstrap"
-    ]
+    ],
+
   }
