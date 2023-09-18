@@ -31,7 +31,7 @@ function NavBar() {
   }, [])
   return (
     <BrowserRouter>
-    <Navbar className={scrolled ? "scrolled": ""} sticky="top" expand="sm" bg="dark" data-bs-theme="dark" text-color="white" >
+    <Navbar className={scrolled ? "scrolled": ""} sticky="top" expand="sm" text-color="white" >
       <Container>
         <Navbar.Brand as={Link} to="/"><img src={Logo} height={30} alt="Portfolio Nick Klaassen" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

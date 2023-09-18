@@ -5,8 +5,14 @@ import '../App.css';
 
 function Projects() {
   return (
+    <div>
+      <Container className="project-header">
+        <h1> Here is a collection of my current and previous projects:</h1>
+      </Container>
+    
+    
     <Container className="project-cards">
-   
+      
           <Card border="primary" style={{ width: '22rem' }}>
             <Card.Img variant="top" src="https://picsum.photos/seed/42/286/180" />
             <Card.Body>
@@ -68,6 +74,7 @@ function Projects() {
           </Card>
         
     </Container>
+    </div>
   );
 }
 
