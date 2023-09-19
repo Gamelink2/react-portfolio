@@ -117,7 +117,7 @@ span.navbar-text {
     display: inline-block;
     margin-left: 14px;
 }
-.social-icon a {
+.navbar-text .social-icon a {
     width: 42px;
     height: 42px;
     background: rgba(217, 217, 217, 0.1);
@@ -129,7 +129,7 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon a::before {
+.navbar-text .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
@@ -139,15 +139,15 @@ span.navbar-text {
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover::before {
+.navbar-text .social-icon a:hover::before {
     transform: scale(1);
 }
-.social-icon a img {
+.navbar-text .social-icon a img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.navbar-text .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
@@ -216,25 +216,28 @@ span.navbar-text {
 .navbar-toggler-icon:after {
 	top: 8px;
 }
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon:after {
 	transform: rotate(45deg);
 	background-color: #fff;
 	height: 2px;
 }
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
 	background-color: #fff;
 	height: 2px;
 }
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
 	border-color: transparent;
+}
+nav.navbar.expanded {
+  background-color: #3d3d3d;
 }
 
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./Assets/Images/banner-bg.png');
+  background-image: url('./Assets/Images/banner-bg2.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -540,71 +543,11 @@ span.navbar-text {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 25px 0 25px 0;
   background-image: url('./Assets/Images/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
 }
 .footer img {
   width: 26%;
@@ -615,6 +558,9 @@ span.navbar-text {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.footer-social-icon{
+  text-align: end;
 }
 /************ Projects Css ************/
 .project-cards {

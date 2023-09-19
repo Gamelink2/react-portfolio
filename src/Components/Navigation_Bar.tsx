@@ -15,6 +15,11 @@ import {useState, useEffect} from "react";
 function NavBar() {
   const [activeLink, setActiveLink] = useState('/');
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded); // Toggle expanded state when Toggler is clicked
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -35,10 +40,10 @@ function NavBar() {
 
   return (
     <BrowserRouter>
-    <Navbar className={scrolled ? "scrolled": ""} sticky="top" expand="md">
+    <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="md">
       <Container>
-        <Navbar.Brand as={Link} to="/"><img src={Logo} height={30} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
-        <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav"> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>
+        <Navbar.Brand as={Link} to="/"><img src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
+        <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" onClick={handleToggle}> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
           <Nav.Link className={activeLink === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/')} as={Link} to="/">Home</Nav.Link>
@@ -47,8 +52,8 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} height={20} alt= "" /></a>
-              <a href="/"><img src={navIcon3} height={20} alt= "" /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} alt= "" /></a>
+              <a href="/"><img src={navIcon3} alt= "" /></a>
             </div>
             <button className="button" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>

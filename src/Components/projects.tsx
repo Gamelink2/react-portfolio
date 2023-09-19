@@ -1,7 +1,9 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import '../App.css';
+import Card1 from './Cards/card1';
+import CustomCard from './customCard';
+import Footer from '../Components/footer'
 
 function Projects() {
   return (
@@ -9,71 +11,37 @@ function Projects() {
       <Container className="project-header">
         <h1> Here is a collection of my current and previous projects:</h1>
       </Container>
-    
-    
-    <Container className="project-cards">
-      
-          <Card border="primary" style={{ width: '22rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/seed/42/286/180" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-      
-          <Card border="danger" style={{ width: '22rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/seed/69/286/180" />
-            <Card.Body>
-              <Card.Title>Card title2</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-       
-          <Card border="success" style={{ width: '22rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/seed/11/286/180" />
-            <Card.Body>
-              <Card.Title>Card title3</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        
-          <Card style={{ width: '22rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/seed/420/286/180" />
-            <Card.Body>
-              <Card.Title>Card title4</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        
-          <Card style={{ width: '22rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/seed/666/286/180" />
-            <Card.Body>
-              <Card.Title>Card title5</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <Container className="project-cards">
+          
+          <Card1 />
+
+          <CustomCard
+          title="Card title normal"
+          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+          image="https://picsum.photos/seed/05062002/286/180"/>
+
+          <CustomCard
+          title="Card title normal"
+          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+          image="https://picsum.photos/seed/15022005/286/180"/>
+
+          <CustomCard
+          title="Card title normal"
+          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+          image="https://picsum.photos/seed/69/286/180"/>
+
+          <CustomCard
+          title="Card title normal"
+          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+          image="https://picsum.photos/seed/666/286/180"/>
+
+          <CustomCard
+          title="Card title normal"
+          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+          image="https://picsum.photos/seed/420/286/180"/>          
         
     </Container>
+    <Footer />
     </div>
   );
 }

@@ -3,7 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Header from "../Assets/Images/header-img.svg"
+import icon from "../Assets/Images/home-icon.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';;
+
  
 const Home = () => {
     return (
@@ -17,7 +19,7 @@ const Home = () => {
                     <button onClick={() => console.log('connect')}>Lets connect <ArrowRightCircle size={25}/></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
-                    <img src={Header} height={500} alt="Header img" />
+                    <img src={icon} height={500} alt="Header img" />
                 </Col>
             </Row>
         </Container>
