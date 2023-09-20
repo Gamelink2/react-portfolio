@@ -54,8 +54,12 @@ function NavBar() {
             <div className="social-icon">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} alt= "" /></a>
               <a href="/"><img src={navIcon3} alt= "" /></a>
+              
             </div>
-            <button className="button" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <div className="connect-button">
+            <a href="/About"><span className="text">Let's Connect</span></a>
+            </div>
+            
           </span>
         </Navbar.Collapse>
       </Container>

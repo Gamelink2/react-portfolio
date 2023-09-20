@@ -122,20 +122,21 @@ span.navbar-text {
     height: 42px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
-    border-radius: 50%;
+    border-radius: 0.7rem;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    color: "white";
 }
 .navbar-text .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.7rem;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
@@ -150,39 +151,44 @@ span.navbar-text {
 .navbar-text .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
+.connect-button {
+  display: inline-block;
+  margin-left: 0px;
+  
 }
-.navbar-text button span {
-  z-index: 1;
+.navbar-text .connect-button a {
+  width: 150px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 0.7rem;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.navbar-text button::before {
+.navbar-text .connect-button a::before {
   content: "";
-  width: 0%;
-  height: 100%;
+  width: 150px;
+  height: 42px;
   position: absolute;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.7rem;
+  transform: scale(0);
+transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
-  color: #121212;
+.navbar-text .connect-button a:hover::before {
+  transform: scale(1);
 }
-.navbar-text button:hover::before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
+.navbar-text .connect-button a .text {
+text-align: center;
+z-index: 1;
+transition: 0.3s ease-in-out;
+color:white;
+}
+.navbar-text .connect-button a:hover .text {
+filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-toggler:active,
  .navbar-toggler:focus {
@@ -236,7 +242,7 @@ nav.navbar.expanded {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url('./Assets/Images/banner-bg2.png');
   background-position: top center;
   background-size: cover;
@@ -246,7 +252,7 @@ nav.navbar.expanded {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(1, 152, 134, 0.764) -5.91%, rgba(0, 115, 42, 0.693) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -286,7 +292,7 @@ nav.navbar.expanded {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 8s linear infinite;
 }
 @keyframes updown {
     0% {
