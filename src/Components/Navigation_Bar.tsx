@@ -6,10 +6,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
-import Contact from './contactMe';
 import About from './aboutMe';
 import Home from './homePage';
 import Projects from './projects';
+import Contact from './contact';
 import {useState, useEffect} from "react";
 
 function NavBar() {
@@ -54,13 +54,11 @@ function NavBar() {
             <div className="social-icon">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} alt= "" /></a>
               <a href="/"><img src={navIcon3} alt= "" /></a>
-              
             </div>
-            <div className="connect-button">
-            <a href="/About"><span className="text">Let's Connect</span></a>
-            </div>
-            
-          </span>
+            <div className="connect-button">      
+            <Nav.Link onClick={() => onUpdateActiveLink('/Contact')} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>
+                  </div>
+                </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -69,8 +67,8 @@ function NavBar() {
         <Route path="/" element={<Home/>}/>
         <Route path="/Home" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Projects" element={<Projects/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
       </Routes>
     </div>
    </BrowserRouter>

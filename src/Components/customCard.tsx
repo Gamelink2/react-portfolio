@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Carousel from 'react-bootstrap/Carousel';
 
 interface CustomCardProps {
   title: string;
