@@ -1,6 +1,7 @@
 import Logo from "../Assets/Images/logo.svg";
-import navIcon1 from "../Assets/Images/nav-icon1.svg";
-import navIcon3 from "../Assets/Images/nav-icon3.svg";
+import IconLinkedIn from "../Assets/Images/Icon-Linked-In.svg";
+import IconInsta from "../Assets/Images/Icon-Insta.svg";
+import IconShop from "../Assets/Images/Icon-Shop.svg";
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -52,8 +53,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={navIcon1} alt= "" /></a>
-              <a href="/"><img src={navIcon3} alt= "" /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={IconLinkedIn} alt= "" /></a>
+              <a href="/"><img src={IconInsta} alt= "" /></a>
+              <a href="/"><img src={IconShop} alt= "" /></a>
             </div>
             <div className="connect-button">      
             <Nav.Link onClick={() => onUpdateActiveLink('/Contact')} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>

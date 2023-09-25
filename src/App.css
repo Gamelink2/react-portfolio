@@ -128,7 +128,6 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    color: "white";
 }
 .navbar-text .social-icon a::before {
     content: "";
@@ -384,6 +383,7 @@ nav.navbar.expanded {
   align-content: end;
   max-width: 800px;
   height: 400px;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 800px) {
   .contact-form {
@@ -393,12 +393,14 @@ nav.navbar.expanded {
     margin-right: 5vw;
   }
 }
-.contact-form email-sent{
- outline-color: #00ff00;
+.contact-form.success {
+  outline-color: #00ff00ac;
+  transition: 0.3s ease-in-out;
 }
-.contact-form email-error{
+.contact-form.error {
   outline-color: #ff0000;
- }
+  transition: 0.3s ease-in-out;
+}
 .form-title{
   height: 50px;
   margin-top: 0px;
@@ -491,4 +493,18 @@ nav.navbar.expanded {
   border-bottom-right-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
   transition: 0.5s;
+}
+.toast-invalid-email{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #ffc107;
+}
+.toast-email-sent{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #00f324;
 }
