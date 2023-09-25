@@ -5,6 +5,7 @@ import Card1 from './Cards/card1';
 import CustomCard from './customCard';
 import Footer from '../Components/footer'
 
+
 function Projects() {
   return (
     <div>

@@ -12,6 +12,8 @@ import Home from './homePage';
 import Projects from './projects';
 import Contact from './contact';
 import {useState, useEffect} from "react";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState('/');
@@ -41,6 +43,7 @@ function NavBar() {
 
   return (
     <BrowserRouter>
+    <SimpleBar style={{ maxHeight: '100%', height: 'calc(100vh - 0px)' }}>
     <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="md">
       <Container>
         <Navbar.Brand as={Link} to="/"><img src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
@@ -73,6 +76,7 @@ function NavBar() {
         <Route path="/Contact" element={<Contact/>}/>
       </Routes>
     </div>
+    </SimpleBar>
    </BrowserRouter>
   );
 }

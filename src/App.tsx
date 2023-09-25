@@ -3,12 +3,12 @@ import './App.css';
 import NavBar from './Components/Navigation_Bar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
     return (
-        <div>
-            <NavBar />
-            
-        </div>
+            <div>
+                <NavBar/>
+            </div>
     );
 }
  
