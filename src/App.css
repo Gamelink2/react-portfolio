@@ -81,6 +81,11 @@ p.success {
 p.danger {
 	color: red;
 }
+/************ Scrollbar Css ************/
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-image: linear-gradient( rgb(183, 0, 255) , rgb(0, 136, 255));
+}
+  
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -248,8 +253,8 @@ nav.navbar.expanded {
   padding: 150px 0 255px 0;
   background-image: url('./Assets/Images/banner-bg2.png');
   height: 100vh;
-  background-position: top center;
-  background-size: cover;
+  background-position: bottom center;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 .banner .tagline {
