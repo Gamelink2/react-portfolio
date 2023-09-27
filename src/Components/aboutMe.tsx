@@ -9,9 +9,9 @@ function About() {
       <Container>
         <Row className="align-items-center my-5">
             <Col xs={12} md={6} xl={7}>
-                <span className='tagline'>Welcome to my about page</span>
+                <span>Welcome to my about page</span>
                 <h1>{'Here i will tell a few things about myself'}<span className='wrap'></span></h1>
-                <p>a few things</p>
+                <p></p>
             </Col>
             <Col xs={12} md={6} xl={5}>
             <p>can put an image here</p>

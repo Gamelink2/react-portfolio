@@ -19,11 +19,10 @@ function NavBar() {
   const [activeLink, setActiveLink] = useState('/');
   const [scrolled, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const scrollableNodeRef = useRef<HTMLDivElement | null>(null); // Set the expected type
+  const scrollableNodeRef = useRef<HTMLDivElement | null>(null); 
+  const onUpdateActiveLink = (value:any) => {setActiveLink(value);}
+  const handleToggle = () => {setExpanded(!expanded);};
 
-  const handleToggle = () => {
-    setExpanded(!expanded); // Toggle expanded state when Toggler is clicked
-  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -34,20 +33,16 @@ function NavBar() {
       }
     };
     
-    if (scrollableNodeRef.current) { // Check if it exists before adding the event listener
+    if (scrollableNodeRef.current) {
       scrollableNodeRef.current.addEventListener("scroll", onScroll);
     }
   
     return () => {
-      if (scrollableNodeRef.current) { // Check if it exists before removing the event listener
+      if (scrollableNodeRef.current) {
         scrollableNodeRef.current.removeEventListener("scroll", onScroll);
       }
     };
   }, []);
-
-  const onUpdateActiveLink = (value:any) => {
-    setActiveLink(value);
-  }
 
   return (
     <BrowserRouter>
@@ -64,9 +59,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"><img src={IconLinkedIn} alt= "" /></a>
-              <a href="https://www.instagram.com/"><img src={IconInsta} alt= "" /></a>
-              <a href="https://www.etsy.com"><img src={IconShop} alt= "" /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank"><img src={IconLinkedIn} alt= "" /></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src={IconInsta} alt= "" /></a>
+              <a href="https://www.etsy.com" target="_blank"><img src={IconShop} alt= "" /></a>
             </div>
             <div className="connect-button">      
             <Nav.Link onClick={() => onUpdateActiveLink('/Contact')} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>

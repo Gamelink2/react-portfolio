@@ -85,7 +85,7 @@ p.danger {
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   background-image: linear-gradient( rgb(183, 0, 255) , rgb(0, 136, 255));
 }
-  
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -243,10 +243,17 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
 	border-color: transparent;
 }
-nav.navbar.expanded {
-  background-color: #3d3d3d;
+@media (max-width:767.5px) {
+  nav.navbar.expanded {
+    background-color: #3d3d3d;
+  }
+  nav.navbar.expanded .nav-link, nav.navbar.expanded .social-icon{
+    margin-left: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: -20px;
+  }
 }
-
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -282,26 +289,8 @@ nav.navbar.expanded {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
-}
 .banner img {
-  animation: updown 8s linear infinite;
+  animation: updown 8s ease-in-out infinite;
 }
 @keyframes updown {
     0% {
@@ -392,7 +381,6 @@ nav.navbar.expanded {
 }
 @media (max-width: 800px) {
   .contact-form {
-    /* Reset the maximum width for smaller screens */
     max-width: none;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -462,16 +450,10 @@ nav.navbar.expanded {
 }
 .form-form-subject{
   height: 25px;
-  border-top-right-radius: 0.0rem;
-  border-top-left-radius: 0.0rem;
-  border-bottom-right-radius: 0rem;
-  border-bottom-left-radius: 0rem;
+  border-radius: 0.0rem;
 }
 .form-form-message{
-  border-top-right-radius: 0.0rem;
-  border-top-left-radius: 0.0rem;
-  border-bottom-right-radius: 0rem;
-  border-bottom-left-radius: 0rem;
+  border-radius: 0.0rem;
   resize: none;
 }
 .form-form-button{

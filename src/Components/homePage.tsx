@@ -8,12 +8,24 @@ const Home = () => {
     return (
         <section className='banner' id="home">
         <Container>
-            <Row className="align-items-center">
+            <Row >
                 <Col xs={12} md={6} xl={7}>
+                    
                     <span className='tagline'>Welcome to my Portfolio</span>
-                    <h1>{'Hi im a web developer'}<span className='wrap'></span></h1>
+                    <h2>{'What do you want to see:'}<span className='wrap'></span></h2>
+                   
+                    <Row>
+                        <Col>
+                        <Container>
+                        <h2>test1</h2>
+                        </Container>
+                        </Col>
+                        <Col>
+                        <h2>test2</h2>
+                        </Col>
+                    </Row>
                 </Col>
-                <Col xs={12} md={6} xl={5}>
+                <Col xs={12} md={6} xl={5} className="align-items-center">
                     <img src={icon} height={500} alt="Header img" />
                 </Col>
             </Row>
