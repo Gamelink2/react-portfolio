@@ -1,4 +1,4 @@
-import Logo from "../Assets/Images/logo.svg";
+import Logo from "../Assets/Images/logo-2.svg";
 import IconLinkedIn from "../Assets/Images/Icon-Linked-In.svg";
 import IconInsta from "../Assets/Images/Icon-Insta.svg";
 import IconShop from "../Assets/Images/Icon-Shop.svg";

@@ -254,8 +254,8 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
     margin-right: -20px;
   }
 }
-/************ Banner Css ************/
-.banner {
+/************ Homepage Css ************/
+.homepage {
   margin-top: 0;
   padding: 150px 0 255px 0;
   background-image: url('./Assets/Images/banner-bg2.png');
@@ -264,7 +264,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background-size:cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+.homepage .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -273,8 +273,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  border-radius: 10px;
 }
-.banner h1 {
+.homepage h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -282,14 +283,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin-bottom: 20px;
   display: block;
 }
-.banner p {
+.homepage p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner img {
+.homepage img {
   animation: updown 8s ease-in-out infinite;
 }
 @keyframes updown {
