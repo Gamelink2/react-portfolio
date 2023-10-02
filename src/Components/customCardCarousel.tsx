@@ -20,7 +20,7 @@ function CustomCardCarousel({ title, text, images }: CustomCardProps) {
       <Carousel interval={null}>
         {images.map((image, index) => (
           <Carousel.Item key={index}>
-            <img src={image.src} alt={`Slide ${index + 1}`} style={{ width: '100%', borderRadius: '0.25rem'}}/>
+            <img src={image.src} alt={`Slide ${index + 1}`} className='card-image'/>
             <Carousel.Caption>
               <h3>{image.caption}</h3>
               <p>{image.description}</p>

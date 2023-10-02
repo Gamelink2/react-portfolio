@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 
 function About() {
   return (
-    <section className='banner' id="home">
+    <section className='homepage' id="home">
       <Container>
         <Row className="align-items-center my-5">
             <Col xs={12} md={6} xl={7}>

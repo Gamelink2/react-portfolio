@@ -3,16 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import icon from "../Assets/Images/home-icon.svg";
-import Spline from '@splinetool/react-spline';
+import textAnimation from './textAnimation';
 
 const Home = () => {
+    const targetRef = textAnimation();
     return (
         <section className='homepage' id="home">
         <Container>
             <Row >
                 <Col xs={12} md={6} xl={7}>
-                    <span className='tagline'>Welcome to my Portfolio</span>
-                    <h2>{'What do you want to see:'}<span className='wrap'></span></h2>
+                    <span ref={targetRef} className='tagline'>This is Cercope</span>
+                    <span className='wrap'>A company focused on making software and 3D-printing</span>
                     <Row>
                     </Row>
                 </Col>
@@ -21,7 +22,6 @@ const Home = () => {
                 </Col>
             </Row>
         </Container>
-
     </section>
     );
 };

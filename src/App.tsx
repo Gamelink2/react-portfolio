@@ -14,8 +14,6 @@ function App() {
  
 export default App;
 
-//https://www.youtube.com/watch?v=hYv6BM2fWd8
-
 //dit bestand verwijderen
 
 //devops beginnen

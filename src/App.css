@@ -258,19 +258,20 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .homepage {
   margin-top: 0;
   padding: 150px 0 255px 0;
-  background-image: url('./Assets/Images/banner-bg2.png');
+  background-image: url('./Assets/Images/banner-bg3.png');
   height: 100vh;
-  background-position: bottom center;
+  background-position: center center;
   background-size:cover;
   background-repeat: no-repeat;
 }
 .homepage .tagline {
+  font-family: monospace;
   font-weight: 700;
   letter-spacing: 0.8px;
-  padding: 8px 10px;
+  padding: 3px 10px;
   background: linear-gradient(90.21deg, rgba(1, 152, 134, 0.764) -5.91%, rgba(0, 115, 42, 0.693) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 16px;
   display: inline-block;
   border-radius: 10px;
@@ -307,6 +308,12 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+/************ Polyrithm Css ************/
+#paper {
+  height: auto;
+  width: auto;
+}
+
 
 /************ Footer Css ************/
 .footer {
@@ -331,6 +338,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 /************ Projects Css ************/
 .project-cards {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-evenly; 
   flex-wrap: wrap;
@@ -338,6 +346,11 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   padding-top: 40px;
   row-gap: 60px;
   padding-bottom: 100px;
+}
+.card-image{
+  height:220px;
+  border-top-right-radius: '0.25rem';
+  border-top-left-radius: '0.25rem';
 }
 
 .project-header {
@@ -355,7 +368,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background-color: rgb(0, 0, 0);
   margin-top:0;
   height: 100vh;
-  background-image: url('./Assets/Images/banner-bg2.png');
+  background-image: url('./Assets/Images/banner-bg3.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
