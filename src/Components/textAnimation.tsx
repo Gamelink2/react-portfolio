@@ -4,16 +4,15 @@ const useTextAnimation = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const targetRef = useRef<HTMLSpanElement | null>(null);
   let interval: NodeJS.Timeout | null = null;
-  let iteration = 0;
   let originalText = "";
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
 
   const animateText = () => {
     if (interval) {
       clearInterval(interval);
     }
   
-    let iteration = 0; // Initialize iteration
+    let iteration = 0;
   
     interval = setInterval(() => {
       if (targetRef.current) {
@@ -51,7 +50,6 @@ const useTextAnimation = () => {
       const handleClick = () => {
         animateText();
       };
-
   
       targetRef.current.addEventListener('mouseover', handleMouseOver);
       targetRef.current.addEventListener('click', handleClick);

@@ -12,9 +12,12 @@ const Home = () => {
         <Container>
             <Row >
                 <Col xs={12} md={6} xl={7}>
-                    <span ref={targetRef} className='tagline'>This is Cercope</span>
-                    <span className='wrap'>A company focused on making software and 3D-printing</span>
+                    <span className='tagline'>Hello, this is <span ref={targetRef}>Cercope</span></span>
                     <Row>
+                    <span className='wrap'>A 3D-printing and software company based in the Netherlands</span>
+                    </Row>
+                    <Row>
+                        <span>If you would like to know more about me or my work then click below or use the links at the top</span>
                     </Row>
                 </Col>
                 <Col xs={12} md={6} xl={5} className="align-items-center">

@@ -65,8 +65,8 @@ function NavBar() {
             </div>
             <div className="connect-button">      
             <Nav.Link onClick={() => onUpdateActiveLink('/Contact')} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>
-                  </div>
-                </span>
+            </div>
+          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>

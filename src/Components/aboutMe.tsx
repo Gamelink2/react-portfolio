@@ -9,9 +9,13 @@ function About() {
       <Container>
         <Row className="align-items-center my-5">
             <Col xs={12} md={6} xl={7}>
-                <span>Welcome to my about page</span>
-                <h1>{'Here i will tell a few things about myself'}<span className='wrap'></span></h1>
-                <p></p>
+                <span>Student at the HU</span>
+                <h1>Nick Klaassen</h1>
+                <p>I got into coding quite early on in my life, at the time it was just changing bits of code to alter websites and games to be more to my liking but after a while i just started writing my own programs which you can see on my projects page. </p>
+                <Container>
+                  <span>My skills:</span>
+                  
+                </Container>
             </Col>
             <Col xs={12} md={6} xl={5}>
             <p>can put an image here</p>

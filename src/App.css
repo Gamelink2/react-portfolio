@@ -348,9 +348,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   padding-bottom: 100px;
 }
 .card-image{
-  height:220px;
   border-top-right-radius: '0.25rem';
   border-top-left-radius: '0.25rem';
+  aspect-ratio: 286 / 180;
 }
 
 .project-header {
@@ -369,7 +369,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin-top:0;
   height: 100vh;
   background-image: url('./Assets/Images/banner-bg3.png');
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
