@@ -11,7 +11,7 @@ function About() {
             <Col xs={12} md={6} xl={7}>
                 <span>Student at the HU</span>
                 <h1>Nick Klaassen</h1>
-                <p>I got into coding quite early on in my life, at the time it was just changing bits of code to alter websites and games to be more to my liking but after a while i just started writing my own programs which you can see on my projects page. </p>
+                <p>I got into coding quite early on in my life, at the time it was just changing bits of code to alter websites and games to be more to my liking but after a while i started writing my own programs which you can see on my projects page. </p>
                 <Container>
                   <span>My skills:</span>
                   

@@ -269,12 +269,22 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 3px 10px;
-  background: linear-gradient(90.21deg, rgba(1, 152, 134, 0.764) -5.91%, rgba(0, 115, 42, 0.693) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: #05000050;
+  border: 3px solid rgba(255, 255, 255, 0.838);
   font-size: 30px;
   margin-bottom: 16px;
   display: inline-block;
   border-radius: 10px;
+}
+.homepage .name {
+  background: linear-gradient(90.21deg, rgba(0, 255, 162, 0.966) -5.91%, rgba(0, 244, 248, 0.988) 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.homepage .intro {
+  margin-left: 19%;
+  margin-top: 5%;
+  max-width: 40%;
 }
 .homepage h1 {
   font-size: 65px;
@@ -308,13 +318,6 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-/************ Polyrithm Css ************/
-#paper {
-  height: auto;
-  width: auto;
-}
-
-
 /************ Footer Css ************/
 .footer {
   padding: 25px 0 25px 0;
@@ -352,7 +355,6 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   border-top-left-radius: '0.25rem';
   aspect-ratio: 286 / 180;
 }
-
 .project-header {
   padding-top: 120px;
   justify-content: center;

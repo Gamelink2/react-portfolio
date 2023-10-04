@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import '../App.css';
 import Card1 from './Cards/card1';
+import Card2 from './Cards/card2';
 import CustomCard from './customCard';
 import Footer from './footer'
 import articulatedFrog from "../Assets/Images/articulated-frog.jpg";
@@ -16,6 +17,8 @@ function Projects() {
         <Container className="project-cards">
           
           <Card1 />
+          
+          <Card2 />
 
           <CustomCard
           title="Articulated frog"
