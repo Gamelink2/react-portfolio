@@ -105,7 +105,7 @@ const Contact = () => {
                     <Toast.Header closeButton={true}>
                         <strong className="me-auto">Email sent</strong>
                     </Toast.Header>
-                    <Toast.Body>Email correctly sent to: {userEmail}</Toast.Body>
+                    <Toast.Body>Email sent with your contact info: {userEmail}</Toast.Body>
                 </Toast>
             )}
         </section>

@@ -2,10 +2,12 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import CPP from '../Assets/Images/C++_Logo.svg';
+import F360 from '../Assets/Images/Fusion-360.svg';
 
 function About() {
   return (
-    <section className='about' id="home">
+    <section className='about'>
       <Container>
         <Row className="align-items-center my-5">
             <Col xs={12} md={6} xl={7}>

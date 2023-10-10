@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import icon from "../Assets/Images/home-icon.svg";
 import textAnimation from './textAnimation';
 
 const Home = () => {
@@ -13,6 +12,7 @@ const Home = () => {
             <Row >
                 <Col className='intro'>
                     <span className='tagline'>Hello, this is <span ref={targetRef} className="name">Cercope</span></span>
+                    <div className='text'>
                     <Row>
                     <span className='wrap readable-text '>A 3D-printing and software company based in the Netherlands.</span>
                     </Row>
@@ -20,6 +20,7 @@ const Home = () => {
                         <span className='readable-text'>If you would like to know more about me or my work then use the links
                          at the top.</span>
                     </Row>
+                    </div>
                 </Col>
                 
             </Row>
@@ -29,8 +30,3 @@ const Home = () => {
 };
  
 export default Home;
-/*
-<Col xs={12} md={6} xl={5} className="align-items-center">
-                    <img src={icon} height={500} alt="Cool dragon" />
-                </Col>
-*/
