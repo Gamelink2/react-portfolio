@@ -6,7 +6,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
+import {Routes, Route, Link, BrowserRouter, useLocation} from 'react-router-dom';
 import About from './aboutMe';
 import Home from './homePage';
 import Projects from './projects';
@@ -26,6 +26,7 @@ function NavBar() {
 
   useEffect(() => {
     const onScroll = () => {
+
       if (scrollableNodeRef.current && scrollableNodeRef.current.scrollTop > 50) {
         setScrolled(true);
       } else {
@@ -44,18 +45,20 @@ function NavBar() {
     };
   }, []);
 
+  const isActive = (path: string) => window.location.pathname === path;
+
   return (
     <BrowserRouter>
     <SimpleBar style={{ maxHeight: '100%', height: '100vh' }} scrollableNodeProps={{ ref: scrollableNodeRef }}>
     <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="md">
       <Container>
-        <Navbar.Brand as={Link} to="/"><img src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"><img className="logo" src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
         <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" onClick={handleToggle}> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link className={activeLink === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/')} as={Link} to="/">Home</Nav.Link>
-            <Nav.Link className={activeLink === '/About' ? 'active navbar-link' : 'navbar-link'} as={Link} onClick={() => onUpdateActiveLink('/About')} to="/About">About me</Nav.Link>
-            <Nav.Link className={activeLink === '/Projects' ? 'active navbar-link' : 'navbar-link'}as={Link} onClick={() => onUpdateActiveLink('/Projects')} to="/Projects">Projects</Nav.Link>
+          <Nav.Link className={isActive('/') ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/')} as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className={isActive('/About') ? 'active navbar-link' : 'navbar-link'} as={Link} onClick={() => onUpdateActiveLink('/About')} to="/About">About me</Nav.Link>
+            <Nav.Link className={isActive('/Projects') ? 'active navbar-link' : 'navbar-link'}as={Link} onClick={() => onUpdateActiveLink('/Projects')} to="/Projects">Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">

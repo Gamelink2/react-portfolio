@@ -14,7 +14,6 @@
 	src: url('./Assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
-
 /************ Default Css ************/
 * {
   margin: 0;
@@ -81,6 +80,11 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.readable-text{
+  color:#ffffff;
+  text-shadow: 0px 0px 20px  #000000, 0px 0px 10px  #000000, 0px 0px 5px  #000000;
+}
 /************ Scrollbar Css ************/
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   background-image: linear-gradient( rgb(183, 0, 255) , rgb(0, 136, 255));
@@ -100,7 +104,10 @@ nav.navbar.scrolled {
   background-color: #3d3d3d;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    filter: drop-shadow(0px 0px 10px #000);
+}
+nav.navbar a.navbar-brand .logo{
+  height: 60px;
 }
 .nav-link {
   font-weight: 400;
@@ -109,10 +116,13 @@ nav.navbar a.navbar-brand {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  transition: 0.2s;
 }
 .navbar-link:hover,
 .active.navbar-link{
     opacity: 1;
+    transition: 0.2s;
+    text-shadow: 0 0 5px #ffffff70;
 }
 span.navbar-text {
     display: flex;
@@ -167,7 +177,8 @@ span.navbar-text {
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 0.7rem;
-  margin-right: 6px;
+  margin-right: 0px;
+  margin-left: 0px;
   align-items: center;
   justify-content: center;
   line-height: 1;
@@ -317,6 +328,31 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+/************ About Css ************/
+.about {
+  margin-top: 0;
+  padding: 110px 0 255px 0;
+  background-image: url('./Assets/Images/banner-bg3.png');
+  height: 100vh;
+  background-position: center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.about .name{
+  font-size: 60px;
+}
+.main-text{
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.skills-container{
+  margin-top: 30px;
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: invert;
+  border-radius: 10px;
+  background-color: #ffffff2e;
 }
 /************ Footer Css ************/
 .footer {

@@ -14,10 +14,11 @@ const Home = () => {
                 <Col className='intro'>
                     <span className='tagline'>Hello, this is <span ref={targetRef} className="name">Cercope</span></span>
                     <Row>
-                    <span className='wrap'>A 3D-printing and software company based in the Netherlands</span>
+                    <span className='wrap readable-text '>A 3D-printing and software company based in the Netherlands.</span>
                     </Row>
                     <Row>
-                        <span>If you would like to know more about me or my work then use the links at the top</span>
+                        <span className='readable-text'>If you would like to know more about me or my work then use the links
+                         at the top.</span>
                     </Row>
                 </Col>
                 
