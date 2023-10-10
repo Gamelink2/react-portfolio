@@ -50,7 +50,7 @@ function NavBar() {
   return (
     <BrowserRouter>
     <SimpleBar style={{ maxHeight: '100%', height: '100vh' }} scrollableNodeProps={{ ref: scrollableNodeRef }}>
-    <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="md">
+    <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/"><img className="logo" src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
         <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" onClick={handleToggle}> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>

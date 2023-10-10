@@ -299,10 +299,8 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 .homepage .text {
   margin-top: 50px;
-  background-color: #000000bb;
   border-radius: 10px;
   padding-left: 10px;
-  box-shadow: 0px 0px 24px 18px #000000bb ;
 }
 .homepage .spacing {
   margin-top: 10px;
@@ -340,6 +338,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   border-right: 0.08em solid #666;
 }
 /************ About Css ************/
+
 .about {
   margin-top: 0;
   padding: 110px 0 255px 0;
@@ -362,7 +361,17 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   outline-style: solid;
   outline-color: invert;
   border-radius: 10px;
-  background-color: #ffffff2e;
+  background-color: #ffffff2e;  
+  display: flex;
+  align-items: center;
+}
+.skills_logos{
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  padding:0%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /************ Footer Css ************/
 .footer {

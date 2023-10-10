@@ -7,10 +7,10 @@ import F360 from '../Assets/Images/Fusion-360.svg';
 
 function About() {
   return (
-    <section className='about'>
+    <section className='about' id="home">
       <Container>
-        <Row className="align-items-center my-5">
-            <Col xs={12} md={6} xl={7}>
+        <Row className=" my-5">
+            <Col xs={12} md={9} xl={7}>
                 <span className='readable-text'>Student at the HU</span>
                 <Row><span className='readable-text name'>Nick Klaassen</span></Row>
                 <Row><span className='readable-text main-text'>I got into coding quite early on in my life, at the time it was just
@@ -23,11 +23,13 @@ function About() {
                 <Row><span className='readable-text main-text'>The results of both of these hobbies can be found in my projects page with some explanation
                  about them</span></Row>
                 <Container className='skills-container'>
-                  <span className='readable-text'>My skills: f360, cpp, solidworks, </span>
-                  
+                  <span className='readable-text '>My skills: </span>
+                  <a className='skills_logos'><img src={CPP} alt= "" /></a>
+                  <a className='skills_logos'><img src={F360} alt= "" /></a>
+                  <a className='skills_logos'><img src={CPP} alt= "" /></a>
                 </Container>
             </Col>
-            <Col xs={12} md={6} xl={5}>
+            <Col xs={12} md={3} xl={5}>
             
             </Col>
         </Row>
