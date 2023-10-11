@@ -2,8 +2,9 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import CPP from '../Assets/Images/C++_Logo.svg';
-import F360 from '../Assets/Images/Fusion-360.svg';
+import CPP from '../Assets/Images/Skills/C++_Logo.svg';
+import F360 from '../Assets/Images/Skills/Fusion-360.png';
+import SW from '../Assets/Images/Skills/SW-logo.png';
 
 function About() {
   return (
@@ -21,12 +22,12 @@ function About() {
                  been using it to repair and modify all sorts of things round my room for a fraction of the cost it would be if i were to
                  buy spare parts and such.</span></Row>
                 <Row><span className='readable-text main-text'>The results of both of these hobbies can be found in my projects page with some explanation
-                 about them</span></Row>
+                 about them.</span></Row>
                 <Container className='skills-container'>
-                  <span className='readable-text '>My skills: </span>
-                  <a className='skills_logos'><img src={CPP} alt= "" /></a>
-                  <a className='skills_logos'><img src={F360} alt= "" /></a>
-                  <a className='skills_logos'><img src={CPP} alt= "" /></a>
+                  <span className='readable-text skills-text'>My skills: </span>
+                  <a className='skills-logos'><img src={CPP} alt= "" /></a>
+                  <a className='skills-logos'><img src={F360} alt= "" /></a>
+                  <a className='skills-logos'><img src={SW} alt= "" /></a>
                 </Container>
             </Col>
             <Col xs={12} md={3} xl={5}>

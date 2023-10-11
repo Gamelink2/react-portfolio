@@ -5,8 +5,9 @@ import Card1 from './Cards/card1';
 import Card2 from './Cards/card2';
 import CustomCard from './customCard';
 import Footer from './footer'
-import articulatedFrog from "../Assets/Images/articulated-frog-stamped.jpg";
-import sentinelOrb from "../Assets/Images/sentinel-orb.jpg";
+import articulatedFrog from "../Assets/Images/Projects/articulated-frog-stamped.jpg";
+import sentinelOrb from "../Assets/Images/Projects/sentinel-orb.jpg";
+import website from "../Assets/Images/Projects/Website.png";
 
 function Projects() {
   return (
@@ -15,7 +16,7 @@ function Projects() {
         <h1> Here is a collection of my current and previous projects:</h1>
       </Container>
         <Container className="project-cards">
-          
+
           <Card1 />
           
           <Card2 />
@@ -31,9 +32,9 @@ function Projects() {
           image={sentinelOrb}/>
 
           <CustomCard
-          title="Card title normal"
-          text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-          image="https://picsum.photos/seed/69/286/180"/>
+          title="This website"
+          text="The website that you are looking at is also made by myself. It's made with React-Bootstrap and Typescript."
+          image={website}/>
 
           <CustomCard
           title="Card title normal"
