@@ -9,8 +9,7 @@ const Home = () => {
     return (
         <section className='homepage' id="home">
         <Container>
-            <Row >
-                <Col className='intro'>
+            <Row className='intro'>
                     <span className='tagline'>Hello, this is <span ref={targetRef} className="name">Cercope</span></span>
                     <div className='text'>
                     <Row>
@@ -21,8 +20,6 @@ const Home = () => {
                          at the top.</span>
                     </Row>
                     </div>
-                </Col>
-                
             </Row>
         </Container>
     </section>

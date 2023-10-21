@@ -286,6 +286,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin-bottom: 16px;
   display: inline-block;
   border-radius: 10px;
+  max-width: fit-content;
 }
 .homepage .name {
   background: linear-gradient(90.21deg, rgba(0, 255, 162, 0.966) -5.91%, rgba(0, 244, 248, 0.988) 111.58%);
@@ -296,6 +297,13 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   margin-left: 19%;
   margin-top: 5%;
   max-width: 40%;
+}
+@media (max-width:991px) {
+  .homepage .intro {
+    margin-left: 15px;
+    max-width: 100%;
+    margin-right: 15px;
+  }
 }
 .homepage .text {
   margin-top: 50px;
