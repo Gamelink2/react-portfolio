@@ -6,7 +6,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Routes, Route, Link, HashRouter, useLocation} from 'react-router-dom';
+import {Routes, Route, Link, BrowserRouter, useLocation} from 'react-router-dom';
 import About from './aboutMe';
 import Home from './homePage';
 import Projects from './projects';
@@ -48,7 +48,7 @@ function NavBar() {
   const isActive = (path: string) => window.location.pathname === path;
 
   return (
-    <HashRouter>
+    <BrowserRouter>
     <SimpleBar style={{ maxHeight: '100%', height: '100vh' }} scrollableNodeProps={{ ref: scrollableNodeRef }}>
     <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="lg">
       <Container>
@@ -83,7 +83,7 @@ function NavBar() {
       </Routes>
     </div>
     </SimpleBar>
-   </HashRouter>
+   </BrowserRouter>
   );
 }
 export default NavBar;
