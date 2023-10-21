@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e86930f.css",
+    "main.js": "/static/js/main.b08dfb93.js",
+    "static/media/phone-banner.png": "/static/media/phone-banner.d81e578202e0a4dc5e29.png",
+    "static/media/banner-bg3.png": "/static/media/banner-bg3.28f8ef3c77e61bda4bf8.png",
+    "static/media/Website.png": "/static/media/Website.16d88edeb01d7a97d07d.png",
+    "static/media/sentinel-orb.jpg": "/static/media/sentinel-orb.a22e2f16c041f2e99209.jpg",
+    "static/media/articulated-frog-stamped.jpg": "/static/media/articulated-frog-stamped.464b96c7e90c975f1572.jpg",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/SW-logo.png": "/static/media/SW-logo.377d5ad9351a863b8ba5.png",
+    "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/logo-2.svg": "/static/media/logo-2.6526131608a2f06e1c3f2b4ac3f1f3ae.svg",
+    "static/media/C++_Logo.svg": "/static/media/C++_Logo.2441702dffa95ca3c92c20816e386640.svg",
+    "static/media/Icon-Insta.svg": "/static/media/Icon-Insta.08b285abb8e118b52637efa5d65c5367.svg",
+    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "index.html": "/index.html",
+    "static/media/Icon-Shop.svg": "/static/media/Icon-Shop.8e6d1647ab779b86a59f78604f61a9df.svg",
+    "static/media/Icon-Linked-In.svg": "/static/media/Icon-Linked-In.721d5414c26365f117e71d46b6641cb2.svg",
+    "main.2e86930f.css.map": "/static/css/main.2e86930f.css.map",
+    "main.b08dfb93.js.map": "/static/js/main.b08dfb93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e86930f.css",
+    "static/js/main.b08dfb93.js"
+  ]
+}
