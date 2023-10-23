@@ -469,6 +469,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   justify-content: center;
   text-align: center;
 }
+.projects-bg{
+  background-image: url('./Assets/Images/project-banner.jpg');
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /************ Contact Css ************/
 .contact-background {

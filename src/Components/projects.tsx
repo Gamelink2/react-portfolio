@@ -11,7 +11,7 @@ import website from "../Assets/Images/Projects/Website.png";
 
 function Projects() {
   return (
-    <div>
+    <div className='projects-bg'>
       <Container className="project-header">
         <h1> Here is a collection of my current and previous projects:</h1>
       </Container>
