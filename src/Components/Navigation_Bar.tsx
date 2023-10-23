@@ -22,8 +22,8 @@ function NavBar() {
   const scrollableNodeRef = useRef<HTMLDivElement | null>(null); 
   const onUpdateActiveLink = (value:any) => {setActiveLink(value);}
   const handleToggle = () => {setExpanded(!expanded);};
-
-
+  const isActive = (path: string) => window.location.pathname === path;
+  
   useEffect(() => {
     const onScroll = () => {
 
@@ -45,20 +45,18 @@ function NavBar() {
     };
   }, []);
 
-  const isActive = (path: string) => window.location.pathname === path;
-
   return (
     <BrowserRouter>
     <SimpleBar style={{ maxHeight: '100%', height: '100vh' }} scrollableNodeProps={{ ref: scrollableNodeRef }}>
-    <Navbar className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="lg">
+    <Navbar expanded={expanded} className={`navbar ${scrolled ? 'scrolled' : ''} ${expanded ? 'expanded' : ''}`} sticky="top" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/"><img className="logo" src={Logo} alt="Portfolio Nick Klaassen" /> </Navbar.Brand>
         <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" onClick={handleToggle}> <span className="navbar-toggler-icon"></span> </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto">
-          <Nav.Link className={isActive('/') ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('/')} as={Link} to="/">Home</Nav.Link>
-            <Nav.Link className={isActive('/About') ? 'active navbar-link' : 'navbar-link'} as={Link} onClick={() => onUpdateActiveLink('/About')} to="/About">About me</Nav.Link>
-            <Nav.Link className={isActive('/Projects') ? 'active navbar-link' : 'navbar-link'}as={Link} onClick={() => onUpdateActiveLink('/Projects')} to="/Projects">Projects</Nav.Link>
+          <Nav.Link className={isActive('/') ? 'active navbar-link' : 'navbar-link'} onClick={() => {onUpdateActiveLink('/');setExpanded(false);}} as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className={isActive('/About') ? 'active navbar-link' : 'navbar-link'} as={Link} onClick={() => {onUpdateActiveLink('/About');setExpanded(false);}} to="/About">About me</Nav.Link>
+            <Nav.Link className={isActive('/Projects') ? 'active navbar-link' : 'navbar-link'}as={Link} onClick={() => {onUpdateActiveLink('/Projects');setExpanded(false);}} to="/Projects">Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -67,7 +65,7 @@ function NavBar() {
               <a href="https://www.etsy.com" target="_blank"><img src={IconShop} alt= "" /></a>
             </div>
             <div className="connect-button">      
-            <Nav.Link onClick={() => onUpdateActiveLink('/Contact')} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>
+            <Nav.Link onClick={() => {onUpdateActiveLink('/Contact');setExpanded(false);}} as={Link} to="/Contact" ><span className="text">Contact me</span></Nav.Link>
             </div>
           </span>
         </Navbar.Collapse>

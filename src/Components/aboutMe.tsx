@@ -8,7 +8,7 @@ import SW from '../Assets/Images/Skills/SW-logo.png';
 
 function About() {
   return (
-    <section className='about' id="home">
+    <section className='about'>
       <Container>
         <Row className=" my-5">
             <Col xs={12} md={9} xl={7}>

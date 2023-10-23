@@ -16,7 +16,7 @@ interface CustomCardProps {
 
 function CustomCardCarousel({ title, text, images }: CustomCardProps) {
   return (
-    <Card border="primary" style={{ width: '22rem' }} >
+    <Card className='card-outline' style={{ width: '22rem' }} >
       <Carousel interval={null} >
         {images.map((image, index) => (
           <Carousel.Item key={index} >

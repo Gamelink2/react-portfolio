@@ -9,7 +9,7 @@ interface CustomCardProps {
 
 function CustomCard({ title, text, image }: CustomCardProps) {
   return (
-    <Card border="primary" style={{ width: '22rem'}}>
+    <Card className='card-outline' style={{ width: '22rem'}}>
       <Card.Img variant="top" src={image} alt='#image not found' className='card-image'/>
       <Card.Body>
         <Card.Title>{title}</Card.Title>

@@ -8,7 +8,6 @@ const Home = () => {
     const targetRef = textAnimation();
     return (
         <section className='homepage' id="home">
-        <Container>
             <Row className='intro'>
                     <span className='tagline'>Hello, this is <span ref={targetRef} className="name">Cercope</span></span>
                     <div className='text'>
@@ -21,7 +20,6 @@ const Home = () => {
                     </Row>
                     </div>
             </Row>
-        </Container>
     </section>
     );
 };
