@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.52248c6f.css",
-    "main.js": "/static/js/main.8b89a06c.js",
-    "static/media/phone-banner.png": "/static/media/phone-banner.d81e578202e0a4dc5e29.png",
+    "main.css": "/static/css/main.48b44555.css",
+    "main.js": "/static/js/main.5e59a982.js",
     "static/media/banner-bg3.png": "/static/media/banner-bg3.28f8ef3c77e61bda4bf8.png",
     "static/media/Website.png": "/static/media/Website.16d88edeb01d7a97d07d.png",
     "static/media/sentinel-orb.jpg": "/static/media/sentinel-orb.a22e2f16c041f2e99209.jpg",
     "static/media/articulated-frog-stamped.jpg": "/static/media/articulated-frog-stamped.464b96c7e90c975f1572.jpg",
+    "static/media/phone-banner2.jpg": "/static/media/phone-banner2.01fdede115ae1504a183.jpg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -19,11 +19,11 @@
     "index.html": "/index.html",
     "static/media/Icon-Shop.svg": "/static/media/Icon-Shop.8e6d1647ab779b86a59f78604f61a9df.svg",
     "static/media/Icon-Linked-In.svg": "/static/media/Icon-Linked-In.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.52248c6f.css.map": "/static/css/main.52248c6f.css.map",
-    "main.8b89a06c.js.map": "/static/js/main.8b89a06c.js.map"
+    "main.48b44555.css.map": "/static/css/main.48b44555.css.map",
+    "main.5e59a982.js.map": "/static/js/main.5e59a982.js.map"
   },
   "entrypoints": [
-    "static/css/main.52248c6f.css",
-    "static/js/main.8b89a06c.js"
+    "static/css/main.48b44555.css",
+    "static/js/main.5e59a982.js"
   ]
 }
