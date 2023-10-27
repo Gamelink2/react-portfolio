@@ -5,13 +5,13 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/Images/logo.svg";
 import IconLinkedIn from "../Assets/Images/Icon-Linked-In.svg";
 import IconInsta from "../Assets/Images/Icon-Insta.svg";
+import IconShop from "../Assets/Images/Icon-Shop.svg";
 
 function Footer() {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
@@ -22,7 +22,7 @@ function Footer() {
               <a href="/"><img src={IconInsta} alt= "" /></a>
             </div>
             </span>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2023. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

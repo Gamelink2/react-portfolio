@@ -47,7 +47,6 @@ function Projects() {
           image="https://picsum.photos/seed/420/286/180"/>          
         
     </Container>
-    <Footer />
     </div>
   );
 }
