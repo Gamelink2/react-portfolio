@@ -10,7 +10,7 @@ function About() {
   return (
     <section className='about'>
       <Container>
-        <Row className=" my-5">
+        <Row className="my-5">
             <Col xs={12} md={9} xl={7}>
                 <span className='readable-text'>Student at the HU</span>
                 <Row><span className='readable-text name'>Nick Klaassen</span></Row>

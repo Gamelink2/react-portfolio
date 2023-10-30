@@ -250,6 +250,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 	border-color: transparent;
 }
 @media (max-width:991px) {
+  nav.navbar.scrolled.expanded {
+    padding: 18px 0;
+    background-color: #3d3d3d;
+  }
   nav.navbar.expanded {
     background-color: #3d3d3d;
   }
@@ -371,7 +375,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background-image: url('./Assets/Images/banner-bg3.png');
   height: 100vh;
   background-position: center center;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .about .name{
@@ -410,8 +414,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
     padding: 50px 0 10px 0;
     background-image: url('./Assets/Images/phone-banner2.jpg');
     background-position: center top;
-    height: 100%;
-    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
   }
   .about .name{
     font-size: 45px;
@@ -480,7 +485,13 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   opacity: 0.5;
   transition: 3s ease;
 }
-
+@media (max-width:991px) {
+  .projects-bg{
+    background-image: url('./Assets/Images/repeat-bg.jpg');
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+}
 /************ Contact Css ************/
 .contact-background {
   display: flex;

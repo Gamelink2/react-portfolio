@@ -21,7 +21,7 @@ function Card1() {
     {
       src: 'https://picsum.photos/seed/44/360/220',
       caption: 'Slide 4',
-      description: 'This is ait longer.',
+      description: 'This is some text.',
     },
     // Add more images as needed
   ];

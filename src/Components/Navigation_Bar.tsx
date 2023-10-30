@@ -26,7 +26,6 @@ function NavBar() {
   
   useEffect(() => {
     const onScroll = () => {
-
       if (scrollableNodeRef.current && scrollableNodeRef.current.scrollTop > 50) {
         setScrolled(true);
       } else {
