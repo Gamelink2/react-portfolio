@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bdc8fb9f.css",
-    "main.js": "/static/js/main.29573c02.js",
+    "main.js": "/static/js/main.3c8cd9c5.js",
     "static/media/banner-bg3.png": "/static/media/banner-bg3.28f8ef3c77e61bda4bf8.png",
     "static/media/Website.png": "/static/media/Website.16d88edeb01d7a97d07d.png",
     "static/media/sentinel-orb.jpg": "/static/media/sentinel-orb.a22e2f16c041f2e99209.jpg",
@@ -20,10 +20,10 @@
     "static/media/Icon-Shop.svg": "/static/media/Icon-Shop.8e6d1647ab779b86a59f78604f61a9df.svg",
     "static/media/Icon-Linked-In.svg": "/static/media/Icon-Linked-In.721d5414c26365f117e71d46b6641cb2.svg",
     "main.bdc8fb9f.css.map": "/static/css/main.bdc8fb9f.css.map",
-    "main.29573c02.js.map": "/static/js/main.29573c02.js.map"
+    "main.3c8cd9c5.js.map": "/static/js/main.3c8cd9c5.js.map"
   },
   "entrypoints": [
     "static/css/main.bdc8fb9f.css",
-    "static/js/main.29573c02.js"
+    "static/js/main.3c8cd9c5.js"
   ]
 }
