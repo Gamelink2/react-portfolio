@@ -60,7 +60,7 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUjcmljayBhc3RsZXkgbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank"><img src={IconLinkedIn} alt= "" /></a>
+              <a href="https://linkedin.com/" target="_blank"><img src={IconLinkedIn} alt= "" /></a>
               <a href="https://www.instagram.com/" target="_blank"><img src={IconInsta} alt= "" /></a>
               <a href="https://www.etsy.com" target="_blank"><img src={IconShop} alt= "" /></a>
             </div>
