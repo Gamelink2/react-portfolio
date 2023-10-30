@@ -69,7 +69,7 @@ const Contact = () => {
         <section className='contact-background'>
             
             <Container className={formClassName}> 
-                <Row className="form-title">Contact us:</Row>
+                <Row className="form-title">Contact me:</Row>
                 <Form onSubmit={sendEmail} ref={formRef}>
                     <Row className="form-email">
                         <Form.Control name="email" className="form-form-email" type="email" placeholder="Your-email@example.com" required/>

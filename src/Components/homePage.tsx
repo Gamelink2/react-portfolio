@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import textAnimation from './textAnimation';
 
 const Home = () => {
+    
     const targetRef = textAnimation();
     return (
         <section className='homepage' id="home">

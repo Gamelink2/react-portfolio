@@ -6,17 +6,17 @@ function Card1() {
     {
       src: 'https://picsum.photos/seed/65/286/180',
       caption: 'Slide 1',
-      description: 'Description for Slide 1',
+      description: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
     },
     {
       src: 'https://picsum.photos/seed/82/286/180',
       caption: 'Slide 2',
-      description: 'Description for Slide 2',
+      description: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
     },
     {
       src: 'https://picsum.photos/seed/81/286/180',
       caption: 'Slide 3',
-      description: 'Description for Slide 3',
+      description: 'This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
     },
     // Add more images as needed
   ];
@@ -24,8 +24,6 @@ function Card1() {
   return (
     <div>
       <CustomCardCarousel
-        title="Card title carousel"
-        text="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
         images={images}
       />
     </div>

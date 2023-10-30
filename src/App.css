@@ -343,20 +343,6 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   line-height: 1.5em;
   width: 96%;
 }
-.homepage img {
-  animation: updown 8s ease-in-out infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -468,11 +454,14 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   outline-width: 1px;
   outline-color: #00ffc3;
   outline-style: solid;
+  max-width: 22rem;
 }
 .card-image{
   border-top-right-radius: 0.32rem;
   border-top-left-radius: 0.32rem;
   aspect-ratio: 286 / 180;
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
 }
 .project-header {
   padding-top: 120px;
@@ -486,6 +475,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.text-transition:after{
+  opacity: 0.5;
+  transition: 3s ease;
 }
 
 /************ Contact Css ************/
@@ -527,7 +520,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 .form-title{
   height: 50px;
-  margin-top: 0px;
+  margin-top: 3px;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 40px;
@@ -535,7 +528,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   color:#ffffff;
 }
 .form-email{
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 5%;
   margin-right: 5%;
   height: 25px;
