@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
 interface Image {
-  src: string;
+  src: any;
   caption: string;
   description: string;
 }

@@ -4,7 +4,6 @@ import '../App.css';
 import Card1 from './Cards/card1';
 import Card2 from './Cards/card2';
 import CustomCard from './customCard';
-import articulatedFrog from "../Assets/Images/Projects/articulated-frog-stamped.jpg";
 import sentinelOrb from "../Assets/Images/Projects/sentinel-orb.jpg";
 import website from "../Assets/Images/Projects/Website.png";
 
@@ -17,13 +16,6 @@ function Projects() {
         <Container className="project-cards">
 
           <Card1 />
-          
-          <Card2 />
-
-          <CustomCard
-          title="Articulated frog"
-          text="This small 3D-printed articulated frog was designed to be printed without any supports. No post-processing needed."
-          image={articulatedFrog}/>
 
           <CustomCard
           title="Sentinel orb"
