@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import '../App.css';
 import Card1 from './Cards/card1';
 import Card2 from './Cards/card2';
 import CustomCard from './customCard';
