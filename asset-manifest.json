@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4ffbd76a.css",
-    "main.js": "/static/js/main.f31c72d5.js",
+    "main.js": "/static/js/main.63bb4933.js",
     "static/media/banner-bg3.png": "/static/media/banner-bg3.28f8ef3c77e61bda4bf8.png",
     "static/media/Hollow-Wyvern.jpg": "/static/media/Hollow-Wyvern.cfbfb0cfb6abe54cdde2.jpg",
     "static/media/Wicked-Tadling.jpg": "/static/media/Wicked-Tadling.7aea62ae8ba2ef7c6f81.jpg",
@@ -27,10 +27,10 @@
     "static/media/Icon-Shop.svg": "/static/media/Icon-Shop.8e6d1647ab779b86a59f78604f61a9df.svg",
     "static/media/Icon-Linked-In.svg": "/static/media/Icon-Linked-In.721d5414c26365f117e71d46b6641cb2.svg",
     "main.4ffbd76a.css.map": "/static/css/main.4ffbd76a.css.map",
-    "main.f31c72d5.js.map": "/static/js/main.f31c72d5.js.map"
+    "main.63bb4933.js.map": "/static/js/main.63bb4933.js.map"
   },
   "entrypoints": [
     "static/css/main.4ffbd76a.css",
-    "static/js/main.f31c72d5.js"
+    "static/js/main.63bb4933.js"
   ]
 }
